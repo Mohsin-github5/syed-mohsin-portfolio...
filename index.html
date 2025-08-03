@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Mohsin Raza - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="my_file.js"></script>
+
+</head>
+<body>
+  <header>
+    <h2>Syed Mohsin Raza</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#services">Services</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hi, I'm Mohsin</h1>
+    <p>Creative Graphic Designer & E-Commerce Specialist with futuristic vision.</p>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p style="text-align: center; max-width: 800px; margin: auto;">
+      I’m a multidisciplinary designer and digital professional. With over 1 year of hands-on experience in Graphic Design, E-commerce Management, and Programming, I build modern and optimized solutions that are visually compelling and user-friendly.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="grid">
+      <div class="card">Graphic Design (Minimal, Logo, Brochures, Cards)</div>
+      <div class="card">E-Commerce (Daraz, Shopify, Fiverr)</div>
+      <div class="card">Programming (C++, Data Structures)</div>
+      <div class="card">Digital Marketing (SEO, Meta Ads, Google Analytics)</div>
+      <div class="card">AI Tools & Automation</div>
+      <div class="card">Project Management & Freelancing</div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2 class="section-title">Certificates</h2>
+    <div class="grid">
+      <div class="card">
+        <strong>Graphic Design</strong>
+        <button class="btn" onclick="showCertificateDetails('gd')">Details</button>
+        <div id="gd" style="display: none;">Canva Certificate: Minimal, Logo, Card Design<br />Illustrator, Photoshop Essentials</div>
+      </div>
+      <div class="card">
+        <strong>E-Commerce</strong>
+        <button class="btn" onclick="showCertificateDetails('ec')">Details</button>
+        <div id="ec" style="display: none;">LinkedIn Learning: Daraz Store Management, Shopify Essentials, Fiverr Freelancing</div>
+      </div>
+      <div class="card">
+        <strong>Programming</strong>
+        <button class="btn" onclick="showCertificateDetails('prog')">Details</button>
+        <div id="prog" style="display: none;">C++ Fundamentals, Data Structures Projects, AI Programming Projects</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Services</h2>
+    <div class="grid">
+      <div class="card">Freelance Graphic Design</div>
+      <div class="card">Daraz Store Setup & Management</div>
+      <div class="card">Digital Marketing Strategy</div>
+      <div class="card">Portfolio Website Building</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed by Syed Mohsin Raza</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
