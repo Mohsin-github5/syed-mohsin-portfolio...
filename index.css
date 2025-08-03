@@ -1,0 +1,122 @@
+/* style.css */
+
+:root {
+  --primary-color: #00f7ff;
+  --bg-color: #0e0e0e;
+  --text-color: #ffffff;
+  --accent-color: #ff00c8;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --glass-blur: blur(10px);
+  --transition-speed: 0.3s;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 10px var(--accent-color);
+}
+
+nav a {
+  color: var(--text-color);
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: var(--text-color);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  backdrop-filter: var(--glass-blur);
+  transition: transform var(--transition-speed);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #111;
+  color: var(--text-color);
+  border-top: 1px solid var(--primary-color);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
